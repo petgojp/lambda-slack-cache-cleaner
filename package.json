@@ -1,0 +1,16 @@
+{
+  "name": "slack-cache-cleaner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.2.41",
+    "bluebird": "^3.3.4",
+    "node-env-file": "^0.1.8"
+  }
+}
