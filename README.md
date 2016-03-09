@@ -1,9 +1,7 @@
 AWS Lambda Function 
 =============
 
-Slackのbotとして利用するLambda Functionです。OpsWorks上のnginx::purge_cacheレシピを実行しNginxのキャッシュファイルを削除します。
-
-AWSのAPI GatewayとLambda Functionを組み合わせてサーバーレスでbotを配備します。
+Slackのbotとして利用するLambda Functionです。OpsWorks上のnginx::purge_cacheレシピを実行しNginxのキャッシュファイルを削除します。AWSのAPI GatewayとLambda Functionを組み合わせてサーバーレスでbotを配備します。
 
 設定ファイル
 --
