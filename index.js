@@ -26,19 +26,16 @@ var opsworks = new AWS.OpsWorks();
 
 exports.handler = function(event, context) {
 
+    console.log('Event received, ', new Date());
+    console.log('event: ', event);
+
     var stackId = '';
-    switch (event.text) {
-        case 'clean news':
-            stackId = stackIds.news;
-            break;
-        case 'clean corp':
-            stackId = stackIds.corp;
-            break;
-        case 'clean match':
-            stackId = stackIds.match;
-            break;
-        default:
-            break;
+    if (/clean news/.test(event.text)) {
+        stackId = stackIds.news;
+    } else if (/clean corp/.test(event.text)) {
+        stackId = stackIds.corp;
+    } else if (/clean match/.test(event.text)) {
+        stackId = stackIds.match;
     }
 
     if (stackId) {
